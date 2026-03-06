@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Assignment</title>
+</head>
+<body>
+ 
+    <!-- incorrect code  -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+
+            <!-- missing closing tag for tr -->
+
+            <tr>
+                <td>hasnain</td>
+                <td>85</td>
+
+            </tr>
+    </table>
+
+
+        <!-- correct code -->
+
+        <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+
+    <tr>
+      <td>hasnain</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+        <!-- Rowspan Error -->
+
+     <table border="1">
+            <tr>
+                <th>Name</th>
+                 <th>Subject</th>
+            </tr>
+            <tr>
+                <td rowspan="2">hasnain</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Extra</td>
+
+     <!-- yahan extra td hai is liye table structure galat ho raha hai -->
+
+            </tr>
+    </table>
+
+
+    <!-- correct code -->
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Sara</td>
+            <td>HTML</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+        </tr>
+
+        </table>
+
+
+        <!-- Colspan Error -->
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Exam Table</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>Hasnain</td>
+            <td>85</td>
+     <!-- Error: yahan ek aur <td> missing hai kyun ke table me total 3 columns hain -->
+
+        </tr>
+    </table>
+
+    <!-- correct code -->
+
+    <table border="1">
+        <tr>
+          <th colspan="2">Exam Table</th>
+          <th>Year</th>
+        </tr>
+    
+        <tr>
+            <td>Hasnain</td>
+            <td>85</td>
+            <td>2025</td>
+        </tr>
+    </table>
+
+    <!-- Mixed Errors -->
+
+    <table border="1">
+         <tr> <th>Day</th>
+             <th>Subject</th>
+
+        </tr>
+     
+     <tr>
+         <td rowspan="2">Monday</td>
+          <td>Math</td>
+    </tr>
+
+      <tr>
+          <td>Science</td>
+           <td>Extra</td>
+
+        <!-- yahan extra <td> hai, table me sirf 2 columns hain -->
+     </tr>
+        </table>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+   <!-- Task 1 – Student Result Table -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Result Sheet</title>
+</head>
+<body>
+
+  <h2>Student Result Sheet</h2>
+
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Marks</th>
+    </tr>
+
+    <tr>
+      <td>Hasnain</td>
+      <td>Math</td>
+      <td>85</td>
+    </tr>
+
+    <tr>
+      <td>Ahsan</td>
+      <td>Science</td>
+      <td>90</td>
+    </tr>
+
+    <tr>
+      <td>Ahmed</td>
+      <td>English</td>
+      <td>88</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+<!-- Task 2  Timetable with Colspan -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Timetable</title>
+</head>
+<body>
+
+  <h2>School Timetable</h2>
+
+  <table border="1">
+    
+    <tr>
+      <th colspan="2">Monday & Tuesday</th>
+      <th>Wednesday</th>
+    </tr>
+
+    
+    <tr>
+      <td>Math</td>
+      <td>Science</td>
+      <td>English</td>
+    </tr>
+
+    <tr>
+      <td>English</td>
+      <td>Math</td>
+      <td>History</td>
+    </tr>
+
+    <tr>
+      <td>Computer</td>
+      <td>Art</td>
+      <td>Math</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+        <!-- Task 3 – Rowspan Practice -->
+
+        <!DOCTYPE html>
+<html>
+<head>
+  <title>Rowspan Practice Table</title>
+</head>
+<body>
+
+  <h2>Student Subjects</h2>
+
+  <table border="1">
+    <tr>
+      <th>Student</th>
+      <th>Subject</th>
+    </tr>
+
+    <!-- Student with two subjects using rowspan -->
+    <tr>
+      <td rowspan="2">Hasnain</td>
+      <td>Math</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+    </tr>
+
+    <!-- Another student -->
+    <tr>
+      <td>Ahsan</td>
+      <td>English</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
+
+
+<!-- Create a table that uses both colspan and rowspan together correctly. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bonus Table – Colspan & Rowspan</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 20px auto;
+      text-align: center;
+    }
+    th, td {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) td {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Student Schedule</h2>
+
+  <table>
+    <!-- First row with colspan -->
+    <tr>
+      <th>Student</th>
+      <th colspan="2">Subjects</th>
+      <th>Year</th>
+    </tr>
+
+    
+    <tr>
+      <td rowspan="2">Hasnain</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>2024</td>
+    </tr>
+
+    <tr>
+      <td>English</td>
+      <td>Art</td>
+      <td>2024</td>
+    </tr>
+
+    
+    <tr>
+      <td>Ahsan</td>
+      <td>History</td>
+      <td>Math</td>
+      <td>2024</td>
+    </tr>
+  </table>
+
+</body>
+</html>

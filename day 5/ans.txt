@@ -1,0 +1,86 @@
+Part A – Short Answer Questions
+
+
+1. What is a web browser?
+A web browser is a program that we use to open and view websites on the internet.
+
+2. What is the main function of a browser?
+The main function of a browser is to open websites and show their content properly on the screen.
+
+3. What is Developer Tools in a browser?
+Developer Tools is a tool inside the browser that helps us check website code, find errors, and test
+changes.
+
+4. What is a code editor?
+A code editor is a program where we write and edit our website or programming code.
+
+5. What does HTML stand for?
+Hypertext Markup Language
+
+6. Is HTML a programming language? Explain briefly.
+HTML is not a programming language because it does not perform logic. It is only used to design and arrange content on a webpage.
+
+7. What is the purpose of the head tag?
+The head tag contains metadata such as title, links to CSS files, and scripts
+
+8. What is the purpose of the body tag?
+Everything that appears on the screen of a website is written inside the body tag.
+
+9. What is the function of the title tag?
+The title tag defines the title shown in the browser tab
+
+10. What is the difference between h1 and p tags?
+<h1> is used for main headings, while <p> is used for paragraphs of text.
+Part B – Long Questions
+1. Explain the difference between a browser and a code editor.
+A browser is used to open and view websites on the internet. A code editor is used
+to write and edit HTML, CSS, and JavaScript code. The browser shows the final
+output, while the code editor is used to create the website files.
+2. Describe the complete structure of a basic HTML page.
+A basic HTML page starts with the DOCTYPE declaration. The html tag is the root
+element. Inside it, there are two main sections: head and body. The head contains
+metadata and the title. The body contains visible webpage content.
+3. Why is HTML called a markup language?
+HTML is called a markup language because it uses tags to mark up content and
+define the structure of a webpage.
+4. Why are headings important in a webpage?
+Headings organize content, improve readability, and help search engines
+understand the structure of the webpage.
+5. Explain the role of Developer Tools for web developers.
+Developer Tools help developers inspect HTML elements, debug CSS and
+JavaScript, test responsiveness, and fix errors efficiently.
+
+
+
+Part C – HTML Writing
+Task 1: Personal Introduction Page
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Assignment</title>
+</head>
+<body>
+<h1>About Me</h1>
+<p>My name is Hasnain. I am learning web development and improving my skills
+<p>I enjoy creating responsive and user-friendly websites.</p>
+<h2>My Goals</h2>
+<p>My goal is to become a professional full stack developer and work on inter
+</body>
+</html>
+Task 2: Corrected HTML Code
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Page</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<p>This is my profile page.</p>
+</body>
+</html>
+Bonus Question:
+Basic HTML Structure Explanation:
+<!DOCTYPE html> → Declares HTML5 document type.
+<html> → Root element of the webpage.
+<head> → Contains metadata and title.
+<body> → Contains visible webpage content.
