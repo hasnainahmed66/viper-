@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web Development Academy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #555;
+        color: white;
+        padding: 15px 30px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Courses Section */
+      .courses {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+        background-color: #e2e2e2;
+      }
+
+      .course-card {
+        background-color: white;
+        padding: 15px;
+        width: 250px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+      }
+
+      .course-card img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .course-card a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+
+      .course-card a:hover {
+        background-color: #555;
+      }
+
+      /* Course Table */
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #333;
+        color: white;
+      }
+
+      /* Contact Form */
+      .contact {
+        width: 50%;
+        margin: 20px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .contact input,
+      .contact textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+      }
+
+      .contact input[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .contact input[type="submit"]:hover {
+        background-color: #555;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 15px 0;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Web Development Academy</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Courses Section -->
+    <section class="courses">
+      <div class="course-card">
+        <img
+          src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg"
+          alt="HTML Course"
+        />
+        <h3>HTML Course</h3>
+        <p>Learn the basics of HTML to create web pages.</p>
+        <a href="#">Enroll Now</a>
+      </div>
+
+      <div class="course-card">
+        <img
+          src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png"
+          alt="CSS Course"
+        />
+        <h3>CSS Course</h3>
+        <p>Style your web pages using CSS for a better look.</p>
+        <a href="#">Enroll Now</a>
+      </div>
+
+      <div class="course-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJA6UFV6kBwQkGnmhpKTjNlTnO2WTq9WdjxA&s"
+          alt="JavaScript Course"
+        />
+        <h3>JavaScript Course</h3>
+        <p>Learn JavaScript to make interactive web pages.</p>
+        <a href="#">Enroll Now</a>
+      </div>
+    </section>
+
+    <!-- Course Schedule Table -->
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Instructor</th>
+        <th>Duration</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Ali</td>
+        <td>2 Weeks</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Sara</td>
+        <td>2 Weeks</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Ahmed</td>
+        <td>4 Weeks</td>
+      </tr>
+    </table>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>© 2025 Web Development Academy</footer>
+  </body>
+</html>
