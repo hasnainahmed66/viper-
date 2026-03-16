@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design & Media Queries</title>
+  </head>
+  <body>
+    <!-- Task 1 – Responsive Cards Layout -->
+
+    <style>
+      .responsive-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+
+      .responsive-card {
+        background-color: white;
+        padding: 15px;
+        width: 250px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+      }
+
+      .responsive-card img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 600px) {
+        .responsive-card {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Task 2 – Responsive Navigation Bar -->
+
+    <style>
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav h2 {
+        font-size: 24px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline gray;
+      }
+
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav a {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    </style>
+
+    <!-- footer -->
+
+    <style>
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+
+    <!-- Debugging Task -->
+    <style>
+          .container{
+            display flex;      /*  : missing → display: flex; */
+            gap 20px;          /*  : missing → gap: 20px; */
+            }
+
+            .card{
+            background-color lightgray;   /*  : missing → background-color: lightgray; */
+            padding:20;                   /*  unit missing → padding: 20px; */
+            }
+
+            @media max-width:600px{       /*  parentheses missing → @media (max-width:600px) */
+            .container{
+            flex-direction column;        /*  : missing → flex-direction: column; */
+            }
+            }
+
+            /* corrected code */
+
+      .container{
+          display: flex;
+          gap: 20px;
+      }
+
+      .card{
+          background-color: lightgray;
+          padding: 20px;
+      }
+
+      @media (max-width:600px){
+      .container{
+      flex-direction: column;
+      }
+      }
+    </style>
+
+    <!-- Task 1 – Responsive Cards Layout -->
+
+    <div class="responsive-container">
+      <div class="responsive-card">
+        <img
+          src="https://www.shutterstock.com/image-photo/sun-sets-behind-mountain-ranges-600nw-2479236003.jpg"
+          alt="Card Image 1"
+        />
+        <h3>Card Title 1</h3>
+        <p>This is a description for card 1.</p>
+      </div>
+      <div class="responsive-card">
+        <img
+          src="https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw="
+          alt="Card Image 2"
+        />
+        <h3>Card Title 2</h3>
+        <p>This is a description for card 2.</p>
+      </div>
+      <div class="responsive-card">
+        <img
+          src="https://img.freepik.com/free-photo/courage-man-jump-through-gap-hill-business-concept-idea_1323-262.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Card Image 3"
+        />
+        <h3>Card Title 3</h3>
+        <p>This is a description for card 3.</p>
+      </div>
+
+      <!-- Task 2 – Responsive Navigation Bar -->
+
+      <nav>
+        <h2>Samoo</h2>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- Task 3 – Add Footer -->
+      <footer class="footer">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
