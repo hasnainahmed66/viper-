@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox Practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav h2 {
+        font-size: 24px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline gray;
+      }
+    </style>
+
+    <!-- Task 2 – Create Flexbox Cards Layout  CSS-->
+
+    <style>
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 10px;
+      }
+    </style>
+
+    <!-- Task 3 – Center Content Using Flexbox CSS -->
+    <style>
+      .contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-color: rgb(219, 178, 178);
+        margin: 20px;
+        border-radius: 10px;
+      }
+    </style>
+
+    <!-- Debugging Task -->
+
+    <style>
+      .container{
+      display: flex
+      justify-content: center;
+      align-items: center;
+      gap : 20px;
+      }
+
+      .box{
+      background-color: lightblue;
+      padding: 20px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- Task 1 – Create a Flexbox Navigation Bar -->
+
+    <!-- navbar -->
+    <nav>
+      <h2>CSS Flexbox Practice</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Task 2 – Create Flexbox Cards Layout -->
+
+    <div class="flex-container">
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>This is the first card.</p>
+      </div>
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>This is the second card.</p>
+      </div>
+      <div class="card">
+        <h3>Card 3</h3>
+        <p>This is the third card.</p>
+      </div>
+
+      <!-- Task 3 – Center Content Using Flexbox -->
+
+      <div class="contain">
+        Welcome to the CSS Flexbox Practice! This section is centered using
+        Flexbox.
+      </div>
+
+      <!-- Debugging Task -->
+      <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+      </div>
+    </div>
+  </body>
+</html>
