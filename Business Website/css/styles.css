@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #222;
+  color: white;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Hero */
+
+.hero {
+  height: 90vh;
+  background: url('../images/hero.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.btn {
+  background: orange;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Sections */
+
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Cards */
+
+.services {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  flex: 1;
+  background: lightgray;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Team */
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.member {
+  background: lightblue;
+  padding: 20px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.project {
+  background: lightgreen;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  margin: 20px auto;
+  width: 300px;
+}
+.section{
+    background: gray;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+form input, form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #eee;
+
+}
+
+form button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+form button:hover {
+  background: darkorange;
+}
+form input:focus, form textarea:focus {
+  outline: none;
+  background: #ddd;
+}
+form textarea {
+  resize: none;
+  height: 100px;
+  border-radius: 5px;
+}
+
+
+
+/* Footer */
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
